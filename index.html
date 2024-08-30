@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Horrors</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #f5f5f5;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-align: center;
+            color: #ff0000;
+            text-shadow: 3px 3px 10px #000;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            max-width: 600px;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        .surprise {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #ff0000;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .container:hover .surprise {
+            opacity: 1;
+        }
+
+        .horror-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1608658251741-43ddc5643f9b') no-repeat center center/cover;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="horror-bg"></div>
+    <div class="container">
+        <h1>Welcome to Dark Horrors</h1>
+        <p>Delve deep into the shadows where horror reigns supreme. From psychological terrors to eerie folklore, explore the unknown and feel the chill of fear.</p>
+        <div class="surprise">Boo! Did I scare you?</div>
+    </div>
+</body>
+</html>
